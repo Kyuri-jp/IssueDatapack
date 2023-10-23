@@ -1,0 +1,5 @@
+scoreboard players enable @a answerTrigger
+tellraw @a "==============================="
+tellraw @a ["",{"text":"[1]","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger answerTrigger set 1"}},{"text":"  ","bold":true,"color":"gold"},{"text":"[2]","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger answerTrigger set 2"}},{"text":"  ","bold":true,"color":"gold"},{"text":"[3]","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger answerTrigger set 3"}},{"text":"  ","bold":true,"color":"gold"},{"text":"[4]","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger answerTrigger set 4"}},{"text":"  ","bold":true,"color":"gold"},{"text":"[5]","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger answerTrigger set 5"}}]
+tellraw @a "==============================="
+execute at @a run playsound minecraft:ui.button.click player @a ~ ~ ~
